@@ -42,3 +42,16 @@ describe('Characters', () => {
         expect(musicos[randomIndex].homeTown).to.exist;
     });
 });
+
+describe('Band', () => {
+    it('should have a list of band members');
+    it('should have a list of tour dates');
+    it('should have a home town');
+    it('should have a style of music');
+});
+
+describe('Shows', () => {
+    it('should have a list of bands');
+    it('should have a location');
+    it('should have a date');
+});
