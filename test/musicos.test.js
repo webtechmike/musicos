@@ -23,13 +23,15 @@ describe('App', () => {
         });
     });
     describe('Setters', () => {
-        it('should set new musicians');
+        it('should set new musicians', () => {
+            expect(setMusico('drunkDave', 'Drunk Dave', ['banjo'], 'hillbilly', 'somefile2.mp3', 'C', 'davey crocket', ['mandolin', 'banjo'], 3, 'Mississippi', ['Hill Billy Rockers'], 'overalls')).to.be.an('object');
+        });
         it('should set new bands');
         it('should set new shows');
     })
 });
 
-describe('Musicos', () => {
+describe('Musico', () => {
     it('should be an array', () => {
         expect(musicos).to.be.an('array');
     });
@@ -59,7 +61,7 @@ describe('Musicos', () => {
     });
 });
 
-describe('Bands', () => {
+describe('Band', () => {
     it('should have a name', () => {
         expect(bands[0].name).to.exist;
     });
@@ -77,7 +79,7 @@ describe('Bands', () => {
     });
 });
 
-describe('Shows', () => {
+describe('Show', () => {
     it('should have a name', () => {
         expect(sxsw.name).to.exist;
     });
