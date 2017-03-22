@@ -44,5 +44,17 @@ let dsc = new Band('DSC', [mike, tony], [d], ['Laguna Hills'], ['Hip Hop'])
 let musicos = [mike, tony];
 let bands = [dsc];
 let sxsw = new Show('Lalapalooza', [dsc], 'Texas', d);
+let shows = [sxsw];
 
+function getMusicos() {
+    return musicos;
+}
+
+function getBands() {
+    return bands;
+}
+
+function getShows() {
+    return shows;
+}
 console.log(musicos, bands, sxsw);
