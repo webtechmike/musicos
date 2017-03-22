@@ -12,9 +12,15 @@ describe('App', () => {
         assert.equal(0, 0);
     });
     describe('Getters', () => {
-        it('should get musicians');
-        it('should get bands');
-        it('should get shows');
+        it('should get musicians', () => {
+            expect(getMusicos()).to.be.an('array');
+        });
+        it('should get bands', () => {
+            expect(getBands()).to.be.an('array');
+        });
+        it('should get shows', () => {
+            expect(getShows()).to.be.an('array');
+        });
     });
     describe('Setters', () => {
         it('should set new musicians');
