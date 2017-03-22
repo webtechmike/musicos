@@ -7,19 +7,29 @@ const randomIndex = parseInt(Math.random() * (max - min + 1) + min);
 
 console.log(min, max, randomIndex);
 
-describe('Musicos', () => {
+describe('App', () => {
     it('should run mocha tests', () => {
         assert.equal(0, 0);
     });
-    it('should log a string to the console', () => {
+    describe('Getters', () => {
+        it('should get musicians');
+        it('should get bands');
+        it('should get shows');
+    });
+    describe('Setters', () => {
+        it('should set new musicians');
+        it('should set new bands');
+        it('should set new shows');
+    })
+});
+
+describe('Musicos', () => {
+    it('should be an array', () => {
         expect(musicos).to.be.an('array');
     });
     it('should start out with Mike', () => {
         expect(musicos[0]).to.be.an('object');
     });
-});
-
-describe('Characters', () => {
     it('should have a default instruments array', () => {
         expect(musicos[randomIndex].instruments).to.exist;
     });
