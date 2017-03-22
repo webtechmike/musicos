@@ -24,7 +24,7 @@ describe('App', () => {
     });
     describe('Setters', () => {
         it('should set new musicians', () => {
-            expect(setMusico('drunkDave', 'Drunk Dave', ['banjo'], 'hillbilly', 'somefile2.mp3', 'C', 'davey crocket', ['mandolin', 'banjo'], 3, 'Mississippi', ['Hill Billy Rockers'], 'overalls')).to.be.an('object');
+            expect(setMusico('Drunk Dave', ['banjo'], 'hillbilly', 'somefile2.mp3', 'C', 'davey crocket', ['mandolin', 'banjo'], 3, 'Mississippi', ['Hill Billy Rockers'], 'overalls')).to.be.an('object');
         });
         it('should set new bands', () => {
             expect(setBand('Dirty Thirties', [mike, tony], [d], 'Los Angeles', 'Down Tempo')).to.be.an('object');

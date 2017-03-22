@@ -58,10 +58,12 @@ function getShows() {
     return shows;
 }
 
-function setMusico(obj, name, instruments, defaultStyle, defaultRiff, preferredKey, influences, axes, yrsExperience, homeTown, bands, outfit) {
-    obj = new Musico(name, instruments, defaultStyle, defaultRiff, preferredKey, influences, axes, yrsExperience, homeTown, bands, outfit);
-    console.log(obj);
-    return obj;
+function setMusico(name, instruments, defaultStyle, defaultRiff, preferredKey, influences, axes, yrsExperience, homeTown, bands, outfit) {
+    return new Musico(name, instruments, defaultStyle, defaultRiff, preferredKey, influences, axes, yrsExperience, homeTown, bands, outfit);
+}
+
+function setBand(name, members, tourDates, homeTown, genre) {
+    return new Band(name, members, tourDates, homeTown, genre);
 }
 
 console.log(musicos, bands, sxsw);
