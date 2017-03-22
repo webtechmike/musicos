@@ -43,15 +43,35 @@ describe('Characters', () => {
     });
 });
 
-describe('Band', () => {
-    it('should have a list of band members');
-    it('should have a list of tour dates');
-    it('should have a home town');
-    it('should have a style of music');
+describe('Bands', () => {
+    it('should have a name', () => {
+        expect(bands[0].name).to.exist;
+    });
+    it('should have a list of band members', () => {
+        expect(bands[0].members).to.exist;
+    });
+    it('should have a list of tour dates', () => {
+        expect(bands[0].tourDates).to.exist;
+    });
+    it('should have a home town', () => {
+        expect(bands[0].homeTown).to.exist;
+    });
+    it('should have at least one genre', () => {
+        expect(bands[0].genre).to.exist;
+    });
 });
 
 describe('Shows', () => {
-    it('should have a list of bands');
-    it('should have a location');
-    it('should have a date');
+    it('should have a name', () => {
+        expect(sxsw.name).to.exist;
+    });
+    it('should have a list of bands', () => {
+        expect(sxsw.talent).to.exist;
+    });
+    it('should have a location', () => {
+        expect(sxsw.location).to.exist;
+    });
+    it('should have a date', () => {
+        expect(sxsw.date).to.exist;
+    });
 });
