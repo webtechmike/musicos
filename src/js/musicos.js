@@ -66,4 +66,8 @@ function setBand(name, members, tourDates, homeTown, genre) {
     return new Band(name, members, tourDates, homeTown, genre);
 }
 
+function setShow(name, talent, location, date) {
+    return new Show(name, talent, location, date);
+}
+
 console.log(musicos, bands, sxsw);
