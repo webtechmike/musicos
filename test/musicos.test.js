@@ -29,8 +29,10 @@ describe('App', () => {
         it('should set new bands', () => {
             expect(setBand('Dirty Thirties', [mike, tony], [d], 'Los Angeles', 'Down Tempo')).to.be.an('object');
         });
-        it('should set new shows');
-    })
+        it('should set new shows', () => {
+            expect(setShow('Lalapalooza', [dsc], 'Texas', d)).to.be.an('object');
+        });
+    });
 });
 
 describe('Musico', () => {
