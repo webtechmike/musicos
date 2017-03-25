@@ -14,60 +14,18 @@ class Musico {
     }
 }
 
-class Band {
-    constructor(name, members, tourDates, homeTown, genre) {
-        this.name = name;
-        this.members = members;
-        this.tourDates = tourDates;
-        this.homeTown = homeTown;
-        this.genre = genre;
-    }
-}
-
-class Show {
-    constructor(name, talent, location, date){
-        this.name = name;
-        this.talent = talent;
-        this.location = location;
-        this.date = date;
-    }
-}
-
-let d = new Date();
-
 let mike = new Musico('Michael Bergen', ['piano', 'keyboards', 'drums'], 'roots', 'someFile.mp3', 'Eb', ['Jackie Mitoo', 'Bill Evans', 'Thelonius Monk', 'Bob Marley', 'Duke Ellington', 'Charlie Parker', 'Miles Davis'], ['Korg Triton Extreme', 'Roland Juno-D', 'Break Beats Kit'], 18, 'Aliso Viejo', ['Fire Burn', 'Dirty Science Crew'], 'Jeans & T-Shirt');
 
 let tony = new Musico('Tony Browning', ['drums'], ['downtempo', 'rock'], 'someOtherFile.mp3', 'N/A', ['The Cure', 'Depeche Mode'], ['Ludwig Kit'], 20, 'Laguna Hills', ['Red Lights', 'Dirty Science Crew'], 'Jeans & T-Shirt');
 
-let dsc = new Band('DSC', [mike, tony], [d], ['Laguna Hills'], ['Hip Hop'])
-
 let musicos = [mike, tony];
-let bands = [dsc];
-let sxsw = new Show('Lalapalooza', [dsc], 'Texas', d);
-let shows = [sxsw];
 
 function getMusicos() {
     return musicos;
-}
-
-function getBands() {
-    return bands;
-}
-
-function getShows() {
-    return shows;
 }
 
 function setMusico(name, instruments, defaultStyle, defaultRiff, preferredKey, influences, axes, yrsExperience, homeTown, bands, outfit) {
     return new Musico(name, instruments, defaultStyle, defaultRiff, preferredKey, influences, axes, yrsExperience, homeTown, bands, outfit);
 }
 
-function setBand(name, members, tourDates, homeTown, genre) {
-    return new Band(name, members, tourDates, homeTown, genre);
-}
-
-function setShow(name, talent, location, date) {
-    return new Show(name, talent, location, date);
-}
-
-console.log(musicos, bands, sxsw);
+console.log(musicos);
