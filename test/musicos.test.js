@@ -24,13 +24,13 @@ describe('App', () => {
     });
     describe('Setters', () => {
         it('should set new musicians', () => {
-            expect(setMusico('Drunk Dave', ['banjo'], 'hillbilly', 'somefile2.mp3', 'C', 'davey crocket', ['mandolin', 'banjo'], 3, 'Mississippi', ['Hill Billy Rockers'], 'overalls')).to.be.an('object');
+            expect(new Musico('Drunk Dave', ['banjo'], 'hillbilly', 'somefile2.mp3', 'C', 'davey crocket', ['mandolin', 'banjo'], 3, 'Mississippi', ['Hill Billy Rockers'], 'overalls')).to.be.an('object');
         });
         it('should set new bands', () => {
-            expect(setBand('Dirty Thirties', [mike, tony], [d], 'Los Angeles', 'Down Tempo')).to.be.an('object');
+            expect(new Band('Dirty Thirties', [mike, tony], [d], 'Los Angeles', 'Down Tempo')).to.be.an('object');
         });
         it('should set new shows', () => {
-            expect(setShow('Lalapalooza', [dsc], 'Texas', d)).to.be.an('object');
+            expect(new Show('Lalapalooza', [dsc], 'Texas', d)).to.be.an('object');
         });
     });
 });

@@ -6,16 +6,3 @@ class Show {
         this.date = date;
     }
 }
-
-let sxsw = new Show('Lalapalooza', [dsc], 'Texas', d);
-let shows = [sxsw];
-
-function getShows() {
-    return shows;
-}
-
-function setShow(name, talent, location, date) {
-    return new Show(name, talent, location, date);
-}
-
-console.log(shows);
